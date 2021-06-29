@@ -1,0 +1,136 @@
+body {
+    color:black;
+  }
+  .container {
+    display: block;
+    width: 500px;
+    margin: 100px auto 0;
+  }
+
+  li * {
+    float: left;
+  }
+  li {
+    clear:both;
+    list-style:none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*button*/
+  button {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    width: 60px;
+    cursor: pointer;
+  }
+  button:hover {
+    color: gray;
+  }
+
+  /*header*/
+  h1 {
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*input form*/
+  input[type="text"] {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+  }
+  input[type="text"]:focus {
+    color: black;
+  }
+  
+  /* new task */
+  label[for='newTask'] {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  label[for='newTask'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  input#newTask {
+    float: left;
+    width: 320px;
+  }
+  p > button:hover {
+    color: gray;
+  }
+  
+  /*dropdown filter*/
+  select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    color:black;
+    cursor: pointer;
+    width: 12rem;
+  }
+
+  /* Task list */
+  li {
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  li > label { 
+    font-size: 20px;
+    line-height: 40px;
+    width: 240px;
+  }
+  li >  input[type="text"] {
+    width: 250px;
+  }
+  li > .delete:hover {
+    color: red;
+  }
+
+  /* Task edit */
+  ul li input[type=text] {
+    display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }
+
+  
+  /* Completed tasks grayed out and striked through*/
+  #completeTasks label {
+    color: gray;
+    text-decoration: line-through;
+  }
+
+
+
